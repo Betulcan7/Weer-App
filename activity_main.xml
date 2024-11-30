@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/etInlognaam"
+        android:hint = "inlognaam" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWachtwoord"
+        android:layout_below="@+id/etInlognaam"
+        android:hint="wachtwoord" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inloggen"
+        android:id="@+id/inloggen"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registreren"
+        android:id="@+id/registreren"
+        android:layout_toRightOf="@+id/inloggen"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>
